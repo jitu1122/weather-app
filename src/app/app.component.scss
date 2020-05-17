@@ -1,0 +1,334 @@
+.container {
+  height: 100%;
+  .outer-box {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .inner-box {
+      .clearfix {
+        margin-top: 50px;
+      }
+      .address-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .report-container {
+        max-height: 460px;
+        .days {
+          font-weight: 600;
+          overflow: auto;
+          height: 460px;
+          .day-insight {
+            text-align: center;
+            margin-bottom: 15px;
+            padding: 15px;
+            .day-status {
+              color: #9a9a9a;
+            }
+            .day{
+            }
+            .day-temp {
+              .min {
+                color: #9a9a9a;
+              }
+              p {
+                margin: 0;
+              }
+            }
+            .icon-container {
+              img {
+                max-width: 40px;
+              }
+            }
+          }
+          .day-insight-active {
+            border: 2px solid #50D1EF;
+            padding: 13px;
+          }
+
+        }
+        .insights {
+          border-radius: 8px;
+          h2 {
+            font-size: 50px;
+            font-weight: 800;
+          }
+          .info-box {
+            text-align: center;
+            margin: 10px;
+            background: #e4f2ff;
+            padding: 7px 25px;
+            .title {
+              font-weight: 700;
+            }
+            .value {
+            }
+          }
+          .sun-info {
+            .sun-legend {
+              //margin: 10px;
+              padding: 0 25px;
+              .title {
+                font-weight: 700;
+              }
+              .value {
+              }
+            }
+          }
+          #temp-graph-container {
+            height:240px;
+          }
+          #sun-graph-container {
+            height: 160px;
+            margin-top: -60px;
+          }
+          -webkit-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+          -moz-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+          box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+        }
+      }
+      width: 100%;
+      ::ng-deep {
+        /* Define the stop colors */
+        #gradient-0 stop {
+          stop-color: #7cb5ec;
+        }
+        #gradient-0 stop[offset="0"] {
+          stop-opacity: 0.50;
+        }
+        #gradient-0 stop[offset="1"] {
+          stop-opacity: 0;
+        }
+        .highcharts-color-0 .highcharts-area {
+          fill-opacity: 1;
+          fill: url(#gradient-0);
+        }
+        .highcharts-axis-labels {
+          text{
+            fill: #9a9a9a !important;
+            font-size: 1rem !important;
+            :first-child {
+              font-weight: 600 !important;
+              fill: #212529 !important;
+            }
+          }
+        }
+        .highcharts-background {
+          fill: transparent;
+        }
+      }
+
+
+
+      .address-bar {
+        max-width: 720px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 10px;
+        background-color: white;
+        height: 45px;
+        width: 100%;
+        border-radius: 8px;
+        -webkit-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+        -moz-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+        box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+        input.form-control {
+          border: none;
+          font-size: 16px;
+          font-weight: 600;
+          color: #000;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: normal;
+          letter-spacing: 0.06px;
+        }
+        .fa-map-marker-alt {
+          margin-right: 5px;
+          margin-left: 10px;
+        }
+        .fa-search {
+          margin-right: 0;
+          margin-left: 10px;
+        }
+      }
+
+      input.form-control:focus {
+        background-color: #fff;
+        border-color: transparent;
+        outline: 0;
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media screen and (max-width: 991px){
+  .container {
+    height: auto;
+    .outer-box {
+      height: auto;
+      padding: 30px 10px;
+      .inner-box {
+        .clearfix {
+        }
+        .address-container {
+
+        }
+        .report-container {
+          max-height: unset;
+          .days {
+            font-weight: 600;
+            overflow: auto;
+            height: 170px;
+            display: flex;
+            flex-direction: row;
+            .day-insight {
+              .day-status {
+                color: #9a9a9a;
+              }
+              .day-data{
+                display: flex;
+                flex-direction: column;
+              }
+              .sep {
+                display: none;
+              }
+              .day-temp {
+              }
+              .icon-container {
+                img {
+                  max-width: 40px;
+                }
+              }
+            }
+
+          }
+          .insights {
+            padding-top: 10px;
+            .temp-data-bold {
+              display: flex;
+              flex-direction: row;
+              margin-left: 0 !important;
+              img {
+                width: 60px;
+                margin-left: 30px;
+                margin-top: -12px;
+
+              }
+            }
+            h2 {
+              font-size: 50px;
+              margin-bottom: 0;
+              font-weight: 800;
+              margin-top: -12px;
+            }
+            .info-box {
+              text-align: center;
+              margin: 10px;
+              background: #e4f2ff;
+              padding: 7px 25px;
+              .title {
+                font-weight: 700;
+              }
+              .value {
+              }
+            }
+            .sun-info {
+              .sun-legend {
+                margin: 10px;
+                padding: 7px 25px;
+                .title {
+                  font-weight: 700;
+                }
+                .value {
+                }
+              }
+            }
+            #temp-graph-container {
+              height:400px;
+            }
+            #sun-graph-container {
+              height: 160px;
+              margin-top: -40px;
+            }
+          }
+        }
+        width: 100%;
+        ::ng-deep {
+          /* Define the stop colors */
+          #gradient-0 stop {
+            stop-color: #7cb5ec;
+          }
+          #gradient-0 stop[offset="0"] {
+            stop-opacity: 0.50;
+          }
+          #gradient-0 stop[offset="1"] {
+            stop-opacity: 0;
+          }
+          .highcharts-color-0 .highcharts-area {
+            fill-opacity: 1;
+            fill: url(#gradient-0);
+          }
+          .highcharts-axis-labels {
+            //text{
+            //  fill: #9a9a9a !important;
+            //  font-size: 1rem !important;
+            //  :first-child {
+            //    font-weight: 600 !important;
+            //    fill: #212529 !important;
+            //  }
+            //}
+          }
+          .highcharts-background {
+            fill: transparent;
+          }
+        }
+
+
+
+        .address-bar {
+          max-width: 720px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          padding: 0 10px;
+          background-color: white;
+          height: 45px;
+          width: 100%;
+          border-radius: 8px;
+          -webkit-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+          -moz-box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+          box-shadow: 0 0 15px 0 rgba(133,133,133,0.75);
+          input.form-control {
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #000;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.06px;
+          }
+          .fa-map-marker-alt {
+            margin-right: 5px;
+            margin-left: 10px;
+          }
+          .fa-search {
+            margin-right: 0;
+            margin-left: 10px;
+          }
+        }
+
+        input.form-control:focus {
+          background-color: #fff;
+          border-color: transparent;
+          outline: 0;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+
+}
