@@ -215,10 +215,8 @@
               flex-direction: row;
               margin-left: 0 !important;
               img {
-                width: 60px;
-                margin-left: 30px;
-                margin-top: -12px;
-
+                vertical-align: baseline;
+                width: 50px;
               }
             }
             h2 {
@@ -250,7 +248,7 @@
               }
             }
             #temp-graph-container {
-              height:340px !important;
+              height:280px !important;
             }
             #sun-graph-container {
               height: 160px;
