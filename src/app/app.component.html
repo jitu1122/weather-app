@@ -39,7 +39,7 @@
             </div>
             <div class="col-lg-9 insights">
               <div class="row">
-                <div class="col-lg-4 d-flex">
+                <div class="col-lg-4 d-flex temp-main">
                   <div class="m-auto p-3 temp-data-bold">
                     <h2>{{appService?.weatherData?.current?.temp | number: '1.0-0'}}°C</h2>
                     <img [src]="'assets/'+appService.getIcon(appService?.weatherData?.current?.weather[0]?.main)" alt="">

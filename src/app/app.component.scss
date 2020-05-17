@@ -207,6 +207,9 @@
           }
           .insights {
             padding-top: 10px;
+            .temp-main {
+              max-height: 60px;
+            }
             .temp-data-bold {
               display: flex;
               flex-direction: row;
