@@ -30,7 +30,7 @@
                     </div>
                   </div>
                   <div class="icon-container">
-                    <img [src]="'../assets/'+appService.getIcon(one.weather[0]?.main)" alt="">
+                    <img [src]="'assets/'+appService.getIcon(one.weather[0]?.main)" alt="">
                   </div>
                   <div class="day-status">{{one.weather[0]?.main}}</div>
                 </div>
@@ -42,7 +42,7 @@
                 <div class="col-lg-4 d-flex">
                   <div class="m-auto p-3 temp-data-bold">
                     <h2>{{appService?.weatherData?.current?.temp | number: '1.0-0'}}°C</h2>
-                    <img [src]="'../assets/'+appService.getIcon(appService?.weatherData?.current?.weather[0]?.main)" alt="">
+                    <img [src]="'assets/'+appService.getIcon(appService?.weatherData?.current?.weather[0]?.main)" alt="">
                   </div>
                 </div>
                 <div class="col-lg-8">
