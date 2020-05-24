@@ -5,6 +5,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Minimum requirement
 
 Angular CLI 9.1.3+
+
 Node 12+
 
 ## Development server
