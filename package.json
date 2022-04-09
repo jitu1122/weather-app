@@ -23,7 +23,7 @@
     "bootstrap": "^4.5.0",
     "highcharts": "^8.1.0",
     "jquery": "^3.5.1",
-    "moment": "^2.25.3",
+    "moment": "^2.29.2",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",
     "zone.js": "~0.10.2"
